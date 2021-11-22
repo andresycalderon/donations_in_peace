@@ -1,6 +1,6 @@
 #Download all files from the Cuentas Claras website
 #All corporations (positions) - 2011 elections
-setwd("D:/Users/USER/Documents/JI/2020-2/2011elections/data/names/allcandidates")
+setwd("D:/Users/USER/Documents/UR 2021-2/MCPP/Project/donations_in_peace")
 
 #Libraries
 library(tidyverse)

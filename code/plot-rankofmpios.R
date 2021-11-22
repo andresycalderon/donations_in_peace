@@ -1,6 +1,6 @@
 #Plot the top 10 municipalities by year, dividing them
 #by the presence of FARC in 2011
-setwd("D:/Users/USER/Documents/UR 2021-2/MCPP/Project")
+setwd("D:/Users/USER/Documents/UR 2021-2/MCPP/Project/donations_in_peace")
 
 #Libraries
 library(tidyverse)

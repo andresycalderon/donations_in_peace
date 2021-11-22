@@ -1,6 +1,6 @@
 #Run TWFE regressions to estimate the impact of the Peace
 #Process on donation statistics
-setwd("D:/Users/USER/Documents/UR 2021-2/MCPP/Project")
+setwd("D:/Users/USER/Documents/UR 2021-2/MCPP/Project/donations_in_peace")
 
 #Libraries
 library(tidyverse)
@@ -8,7 +8,7 @@ library(sp)
 library(gstat)
 library(naniar)
 library(fixest)
-
+library(pander)
 #Import Datasets
 #Dataset at the municipality-year level with farc status and donation stats
 all_mpios_panel <- read_csv('data/clean/panelfinal.csv')
@@ -38,4 +38,9 @@ amount_mean_mod = feols(log(amount_mean) ~ CEASEFIRExFARC | Municipality + Year,
 model_labels <- c("Total de donantes", "Donantes por cand.", "Monto total", "Monto por cand.")
 
 etable(donors_sum_mod,donors_mean_mod,amount_sum_mod,amount_mean_mod,
-       headers = model_labels)
+       headers = model_labels,
+       postprocess.df=pandoc.table.return,
+       depvar=FALSE,
+       digits.stats=3,
+       fitstat=c('n','r2'),
+       style="simple")

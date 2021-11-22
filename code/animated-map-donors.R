@@ -1,5 +1,5 @@
 #Animated map: Donation statistics for three local elections in Colombia
-setwd("D:/Users/USER/Documents/UR 2021-2/MCPP/Project")
+setwd("D:/Users/USER/Documents/UR 2021-2/MCPP/Project/donations_in_peace")
 
 #Libraries
 library(tidyverse)

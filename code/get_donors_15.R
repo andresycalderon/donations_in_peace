@@ -1,5 +1,5 @@
 #Get the donors sheets for all corps (except JAL) for 2015
-setwd("D:/Users/USER/Documents/UR 2021-2/MCPP/Project")
+setwd("D:/Users/USER/Documents/UR 2021-2/MCPP/Project/donations_in_peace")
 
 #Libraries
 library(tidyverse)

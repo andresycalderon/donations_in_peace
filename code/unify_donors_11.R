@@ -5,7 +5,7 @@ library(readxl)
 library(writexl)
 
 #Municipality-level elections 2011
-setwd("D:/Users/USER/Documents/UR 2021-2/MCPP/Project")
+setwd("D:/Users/USER/Documents/UR 2021-2/MCPP/Project/donations_in_peace")
 
 #Import all downloaded datasets - all corporations
 path <- "data/auxiliar/names/2011"
