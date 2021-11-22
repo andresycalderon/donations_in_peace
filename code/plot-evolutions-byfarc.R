@@ -135,7 +135,10 @@ plot_evol_fun <- function(var_index){
   
   #Export plot
   path <- paste0('output/evol_',outcomes[var_index],'.pdf')
+  pathpng <- paste0('output/evol_',outcomes[var_index],'.png')
   ggsave(filename = path,width = 20,height = 10,units = 'cm')
+  ggsave(filename = pathpng,width = 20,height = 10,units = 'cm')
+  
 }
 #Apply functions
 index_vtrs <- c(1:4)

@@ -43,4 +43,4 @@ etable(donors_sum_mod,donors_mean_mod,amount_sum_mod,amount_mean_mod,
        depvar=FALSE,
        digits.stats=3,
        fitstat=c('n','r2'),
-       style="simple")
+       style="rmarkdown")
